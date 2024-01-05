@@ -1,0 +1,140 @@
+/* Form.css */
+
+body {
+    background-color: rgb(139, 136, 138);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    width: 400px;
+    margin-top: 40px;
+}
+
+legend {
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: #d19014;
+    border-radius: 5px;
+    padding: 5px; /* Add padding for better appearance */
+    text-align: center; /* Center the text */
+}
+
+#legend {
+    border: 4px solid #2b2b2b;
+    background-color: rgb(17, 17, 42);
+    padding: 30px;
+}
+
+p {
+    color: red;
+    border: 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+    color: white;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    border: 1px solid #2b2b2b;
+    border-radius: 5px;
+}
+
+form input[type="submit"],
+button {
+    background: #27ae60;
+    color: white;
+    width: 250px;
+    border: 0;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+button:hover {
+    background-color: #d19014;
+    transition: all 0.3s ease-in-out;
+}
+
+.Toastify__toast {
+    font-size: 16px;
+}
+
+.user-info > p {
+    font-size: 40px; /* Default font size */
+}
+
+/* Add this to your Form.css file */
+.successHomeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #27ae60;
+    border-radius: 8px;
+    padding: 25px 15px;
+    margin-top: 20px;
+    margin-left: 100px;
+    transition: background-color 0.3s ease-in-out;
+}
+.successHomeButton>svg{
+    font-size: 60px;
+}
+
+.successHomeButton:hover {
+    background-color: #3eb110; /* Adjust the color on hover */
+}
+
+
+/* Media query for smaller screens */
+
+@media (max-width: 425px) {
+
+    .user-info{
+        margin-left: 70px;
+    }
+    .navbar .user-info > p {
+        font-size: 30px; /* Adjust the font size for smaller screens */
+    }
+
+    .navbar .user-info .MuiSvgIcon-root {
+        font-size: 60px; /* Adjust the size of the icon for smaller screens */
+    }
+
+    .Toastify__toast {
+        margin-left: 45px;
+        margin-top: 15px;
+        font-size: 14px;
+        width: 80%; /* Adjust the width for smaller screens */
+        min-height: 50px; /* Adjust the minimum height for smaller screens */
+    }
+}
