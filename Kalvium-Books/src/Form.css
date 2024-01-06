@@ -19,7 +19,7 @@ fieldset {
 }
 
 legend {
-    width: 120px;
+    width: 150px;
     height: 30px;
     color: white;
     background-color: #d19014;
@@ -80,7 +80,8 @@ button {
 
 form input[type="submit"]:hover,
 button:hover {
-    background-color: #d19014;
+    background-color: #66ff00;
+    color: #000;
     transition: all 0.3s ease-in-out;
 }
 

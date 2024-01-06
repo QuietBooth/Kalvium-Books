@@ -147,7 +147,10 @@ function Books() {
                             </div>
                         ))
                     ) : (
-                        <p className="not-found" > Book Not found 😓</p>
+                        <div className="not-found-div" >
+                            <p className="not-found" > Book Not found </p>
+                            <p className="not-found" >😓 </p>
+                        </div>
                     )}
                 </div>
             )}

@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   height: 600px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in;
 }
 
 .navbar {
@@ -198,10 +198,13 @@ body {
 
 .not-found{
   margin-left: 430px;
-  margin-top:200px ;
+  margin-top:100px ;
   width: 900px;
   font-size: 100px;
+  text-align: center;
 }
+
+
 
 @media screen and (max-width: 425px) {
 
@@ -273,12 +276,15 @@ body {
     font-size: 20px;
   }
 
+  .not-found-div{
+    margin-top: 200px;
+  }
   .not-found{
     margin:0;
-    margin-left: 40px;
-    margin-top: 150px;
-    /* width: 900px; */
-    font-size: 30px;
+    padding: 0;
+    width: 300px;
+    font-size: 40px;
+    text-align: center;
   }
 
 }
